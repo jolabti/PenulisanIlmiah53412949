@@ -1,0 +1,95 @@
+header
+{
+
+ 
+ 	margin: 5px 10px 10px 10px;
+	background-position: center;
+	border-top: groove;
+	border-bottom: groove;
+	outline-color: #faaaaa;
+	position: center;
+	width: auto;
+}
+
+#signupbutton{
+
+	 
+   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+           box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+   border: solid 3px rgba(12,77,255,60);
+   background-color: #aaabba;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+           border-radius: 5px;
+   margin: 5px;
+   display: inline-block;
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+   font-size: 12pt;
+   line-height: 40px;
+   color: rgba(0,0,0,1);
+ 
+ 
+}
+
+
+
+
+header > img
+{
+
+ 
+ 
+	background-position: center;
+	border-top: groove;
+	background-color: #aabbcc;
+	border-bottom: groove;
+	outline-color: #faaaaa;
+	position: center;
+	height: 250px;
+	width: 1500px;
+}
+
+body{
+
+
+ background: -webkit-linear-gradient(yellow, purple); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(purple, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(purple, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(purple, blue); /* Standard syntax */
+
+}
+
+#konten
+{
+	padding-left: 200px;
+	background-color: #aaabba;
+	margin-top: 35px;
+	padding-right: 200px;
+	border-spacing: inherit;
+	margin-right: 20px;
+	margin-left: 20px;
+	border-radius: 20px 20.5px 30px 15px;
+
+
+
+}
+#footer{
+
+	margin-top: 40px;
+	background-color: #aaeecc;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+#footer:hover{
+
+	margin-top: 40px;
+	background-color: #faaaaa;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+}

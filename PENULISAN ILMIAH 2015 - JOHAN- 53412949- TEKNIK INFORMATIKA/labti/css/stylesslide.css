@@ -1,0 +1,157 @@
+/* Revealing 3D Menu CSS */
+body
+{
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    background-color: #221;
+}
+
+/* main page */
+article
+{
+    position: fixed;
+    width: 50%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px 15%;
+    background-color: #fff;
+    overflow: auto;
+    z-index: 0;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+}
+
+
+article:after
+{
+    position: absolute;
+    content: ' ';
+    left: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0.2) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(right, rgba(0,0,0,0.2) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(right, rgba(0,0,0,0.2) 0%, transparent 100%);
+    background-image: -o-linear-gradient(right, rgba(0,0,0,0.2) 0%, transparent 100%);
+    background-image: linear-gradient(right, rgba(0,0,0,0.2) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+/* navigation */
+nav
+{
+    position: fixed;
+    left: -16em;
+    top: 0;
+    bottom: 0;
+    background-color: #65e;
+    display: inline-block;
+    border-right: 50px solid #765;
+    box-shadow: 4px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+    cursor: pointer;
+}
+
+nav:after
+{
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 0;
+    right: -70px;
+    top: 50%;
+    border-width: 15px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+
+nav ul
+{
+    width: 14em;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+}
+
+nav a:link, nav a:visited
+{
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    line-height: 2.5em;
+    text-indent: 10px;
+    text-decoration: none;
+    color: #ffc;
+    border-radius: 4px;
+    outline: 0 none;
+}
+
+nav a:hover, nav a:focus
+{
+    color: #fff;
+    background-color: #543;
+    text-shadow: 0 0 4px #fff;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.2);
+}
+
+/* hovering */
+article, article:after, nav, nav *
+{
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+nav:hover
+{
+    left: 0;
+}
+
+nav:hover ~ article
+{
+    -webkit-transform: translateX(16em) perspective(600px) rotateY(20deg);
+    -moz-transform: translateX(16em) perspective(600px) rotateY(20deg);
+    -ms-transform: translateX(16em) perspective(600px) rotateY(4deg);
+    -o-transform: translateX(16em) perspective(600px) rotateY(10deg);
+    transform: translateX(16em) perspective(600px) rotateY(20deg);
+}
+
+nav:hover ~ article:after
+{
+    left: 60%;
+    right: 20%;
+}
+
+/* typography */
+footer
+{
+    margin-top: 2em;
+    margin-right: 1em;
+
+    border-top: 1px dotted #999;
+}
+
+h1
+{
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 3 1 0.2em 0;
+    border-bottom: 1px solid #555;
+}
+
+p
+{
+    line-height: 1.3em;
+    margin: 0 0 1.5m 0;
+}
